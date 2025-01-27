@@ -14,7 +14,7 @@ Download the repo with
 
 Next, move into the PocketFetch directory
 
-`cd pocketfetch`
+`cd pocketfetch/src/`
 
 Compile using
 
