@@ -80,9 +80,11 @@ proc getStorageInfo(): string {.inline.} =
     parseInt(execProcess(r"df -m --output=size / | tail -n +2").strip()) div 1000
   return " Storage: " & $avail & "GB out of " & $size & "GB"
 
+# Current user shell
 proc getShell(): string {.inline.} =
   execProcess(r"echo $SHELL")[5 .. 8]
 
+# Time in UTC. I have not found how to use user's time zone
 proc getCurrentTime(): string {.inline.} =
   " It's " & $now().format("hh:mm") & " UTC on this wonderful " &
     now().format("dddd").strip()
