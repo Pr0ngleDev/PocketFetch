@@ -10,7 +10,7 @@ Ensure you have Nim installed on your system. On Debian based systems, one can u
 
 Download the repo with
 
-`git pull https://github.com/Pr0ngleDev/PocketFetch.git`
+`git clone https://github.com/Pr0ngleDev/PocketFetch.git`
 
 Next, move into the PocketFetch directory
 
